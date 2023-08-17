@@ -47,7 +47,5 @@ def fastapi_app():
     # but the starter example disables the key check for convenience.
     # 3. You can also store your API key on modal.com and retrieve it in this function
     # by following the instructions at: https://modal.com/docs/guide/secrets
-    # POE_API_KEY = ""
-    # app = make_app(bot, api_key=POE_API_KEY)
     app = make_app(bot, allow_without_key=True)
     return app
